@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking||Restoran</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&amp;
+    family=Nunito:wght@600;700;800&amp;family=Pacifico&amp;display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="home-about" id="home">
+        <nav id="navbar">
+            <div class="container">
+                <h1 class="logo">
+                    <i class="fa fa-utensils me-3"></i>
+                    Restoran
+                </h1>
+                    <div id="menu-icon" class="menu-icon" onclick="toggleMenu()">
+                        <i class="fa fa-bars"></i> 
+                    </div>
+                    
+                <div class="nav-item " id="nav-item">
+                    <!-- الريسبونسف -->         
+                    <ul id="nav-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html" >About</a></li>
+                        <li><a href="Service.html"  >Service</a></li>
+                        <li><a href="menu.html" >menu</a></li>
+                        <div class="drop" >
+                            <li class="arrow"><a href="" class="active">pages</a></li>
+                            <div class="drop-item">
+                                <a href="booking.html" >Booking</a>
+                                <a href="team.html">Our Team</a>
+                                <a href="testimonial.html">Testimonial</a>
+                            </div>
+                        </div>
+                        <li><a href="contact.html">contact</a></li>
+                    </ul>
+                    <a href="contact.html" class="btn-nav">Book A Table</a>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="about-bage">
+                <h1>Booking</h1>
+                <h2>
+                    <span class="color"> HOME</span>
+                    <span class="line1">/</span>
+                    <span class="color">PAGES </span>
+                    <span class="line1">/</span>
+                    <span>ABOUT</span>
+                </h2>
+            </div>
+        </div>
+    </section>
+    <div class="free"></div>
+    <!-- reserv -->
+    <section class="reserv">
+        <div class="container">
+            <div class="reserv-main">
+                <div class="main-viduo">
+                    <button type="button" id="playVideoBtn" data-src="https://youtu.be/_dui6BUmMBg?t=17">
+                        <span></span>
+                    </button>
+                </div>
+                <div class="main-form">
+                    <div class="form1">
+                        <h5>Reservation</h5>
+                        <h1>Book A Table Online</h1>
+                        <form >
+                            <div class="inp1">
+                                <div class="inp11">
+                                    <input type="text" class="form-control" id="name" >
+                                    <label for="name">Your Name</label>
+                                </div>
+                            </div>
+                            <div class="inp1">
+                                <div class="inp11 ">
+                                    <input type="email" class="form-control" id="email">
+                                    <label for="email">Your Email</label>
+                                </div>
+                            </div>
+                            <div class="inp1">
+                                <div class="inp11">
+                                    <input type="text" class="form-control datetimepicker-input" id="datetime"  >
+                                    <label for="datetime">Date &amp; Time</label>
+                                </div>
+                            </div>
+                            <div class="inp1 ">
+                                <div class="inp11 ic">
+                                    <select class="form-select  " id="select1">
+                                        <option value="1">People 1</option>
+                                        <option value="2">People 2</option>
+                                        <option value="3">People 3</option>
+                                    </select>
+                                    <label for="select1">No Of People</label>
+                                </div>
+                            </div>
+                            <div class="inp5 inp1">
+                                <div class="inp11 "> 
+                                    <textarea class="form-control" id="message" style="height: 100px; width: 98%;" ></textarea>
+                                    <label for="message">Special Request</label>
+                                </div>
+                            </div>
+                            <div class="inp5">
+                                <button class="btn " type="submit">Book Now</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="free"></div>
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Company <span></span></h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Reservation</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Condition</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact <span></span></h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Street, New York, USA</p>
+                    <p><i class="fas fa-phone"></i> +012 345 67890</p>
+                    <p><i class="fas fa-envelope"></i> info@example.com</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Opening <span></span></h3>
+                    <p>Monday - Saturday <br> 09AM - 09PM</p>
+                    <p>Sunday <br> 10AM - 08PM</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Newsletter <span></span></h3>
+                    <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                    <form action="#">
+                        <input type="email" placeholder="Your email" required>
+                        <button type="submit">SIGNUP</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© Your Site Name, All Rights Reserved. Designed By HTML Codex</p>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Cookies</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">FAQs</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <button id="scrollTopBtn">
+        ↑
+    </button>
+    <script src="booking.js"></script>
+</body>
+</html>

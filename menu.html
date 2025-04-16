@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu||Restoran</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&amp;
+    family=Nunito:wght@600;700;800&amp;family=Pacifico&amp;display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="home-about" id="home">
+        <nav id="navbar">
+            <div class="container">
+                <h1 class="logo">
+                    <i class="fa fa-utensils me-3"></i>
+                    Restoran
+                </h1>
+                    <div id="menu-icon" class="menu-icon" onclick="toggleMenu()">
+                        <i class="fa fa-bars"></i> 
+                    </div>
+                    
+                <div class="nav-item " id="nav-item">
+                    <!-- الريسبونسف -->         
+                    <ul id="nav-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html" >About</a></li>
+                        <li><a href="Service.html"  >Service</a></li>
+                        <li><a href="#menu" class="active">menu</a></li>
+                        <div class="drop">
+                            <li class="arrow"><a href="">pages</a></li>
+                            <div class="drop-item">
+                                <a href="booking.html">Booking</a>
+                                <a href="team.html">Our Team</a>
+                                <a href="testimonial.html">Testimonial</a>
+                            </div>
+                        </div>
+                        <li><a href="contact.html">contact</a></li>
+                    </ul>
+                    <a href="contact.html" class="btn-nav">Book A Table</a>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="about-bage">
+                <h1>Food Menu</h1>
+                <h2>
+                    <span class="color"> HOME</span>
+                    <span class="line1">/</span>
+                    <span class="color">PAGES </span>
+                    <span class="line1">/</span>
+                    <span>ABOUT</span>
+                </h2>
+            </div>
+        </div>
+    </section>
+    <!-- menu section -->
+    <section class="menu" id="menu">
+        <div class="container">
+            <div class="menu-header">
+                <h5>Food Menu</h5>
+                <h1>Most Popular Items</h1>
+            </div>
+            <div class="menu-content">
+                <ul>
+                    <li><a class="active am" href="#cont1" onclick="setActive(this, 'cont1')">
+                        <i class="fa fa-coffee fa-2x text-primary"></i>
+                        <div class="ph">
+                            <p>Popular</p>
+                            <h6>Breakfast</h6>
+                        </div>
+                    </a></li>
+                    <li><a class="am" href="#cont2" onclick="setActive(this, 'cont2')">
+                        <i class="fa fa-hamburger fa-2x text-primary"></i>
+                        <div class="ph">
+                            <p>Special</p>
+                            <h6>Launch</h6>
+                        </div>
+                    </a></li>
+                    <li>
+                        <a href="#cont1" onclick="setActive(this, 'cont1')">
+                            <i class="fa fa-utensils fa-2x text-primary"></i>
+                            <div class="ph">
+                                <p>Lovely</p>
+                                <h6>Dinner</h6>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <div class="tap-content">
+                    <div class="tap1 content " id="cont1" >
+                        <div class="col1">
+                            <div class="col1-main">
+                                <img src="img/Egg Sandwich.jpg" alt="photo">
+                                <div class="col-text">
+                                    <h5>
+                                        <span class="name">Egg Sandwich</span>
+                                        <span class="price">$40</span>
+                                    </h5>
+                                    <p>Ipsum ipsum clita erat amet dolor justo diam</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col2">
+                            <div class="col1-main">
+                                <img src="img/OIP.jpg" alt="photo">
+                                <div class="col-text">
+                                    <h5>
+                                        <span class="name">Falafel Breakfast</span>
+                                        <span class="price">$35</span>
+                                    </h5>
+                                    <p>Ipsum ipsum clita erat amet dolor justo diam</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col3">
+                            <div class="col1-main">
+                                <img src="img/omlit.jpg" alt="photo">
+                                <div class="col-text">
+                                    <h5>
+                                        <span class="name">Vegetable Omelette</span>
+                                        <span class="price">$45</span>
+                                    </h5>
+                                    <p>Ipsum ipsum clita erat amet dolor justo diam</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col4">
+                            <div class="col1-main">
+                                <img src="img/afocato.jpg" alt="photo">
+                                <div class="col-text">
+                                    <h5>
+                                        <span class="name">Avocado Toast</span>
+                                        <span class="price">$75</span>
+                                    </h5>
+                                    <p>Ipsum ipsum clita erat amet dolor justo diam</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col5">
+                            <div class="col1-main">
+                                <img src="img/Oatmeal-with-Fruit-and-Nuts.jpg" alt="photo">
+                                <div class="col-text">
+                                    <h5>
+                                        <span class="name">Oatmeal with Fruits and Nuts</span>
+                                        <span class="price">$100</span>
+                                    </h5>
+                                    <p>Ipsum ipsum clita erat amet dolor justo diam</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col6">
+                            <div class="col1-main">
+                                <img src="img/Bread with Butter and Honey.jpg" alt="photo">
+                                <div class="col-text">
+                                    <h5>
+                                        <span class="name">Bread with Butter and Honey</span>
+                                        <span class="price">$50</span>
+                                    </h5>
+                                    <p>Ipsum ipsum clita erat amet dolor justo diam</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col7">
+                            <div class="col1-main">
+                                <img src="img/Stuffed Croissant.jpg" alt="photo">
+                                <div class="col-text">
+                                    <h5>
+                                        <span class="name">Stuffed Croissant</span>
+                                        <span class="price">$65</span>
+                                    </h5>
+                                    <p>Ipsum ipsum clita erat amet dolor justo diam</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col8">
+                            <div class="col1-main">
+                                <img src="img/Pancakes with Syrup and Fruits.jpg" alt="photo">
+                                <div class="col-text">
+                                    <h5>
+                                        <span class="name">Pancakes with Syrup and Fruits</span>
+                                        <span class="price">$75</span>
+                                    </h5>
+                                    <p>Ipsum ipsum clita erat amet dolor justo diam</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tap2 content" id="cont2" >
+                        <div class="col1">
+                            <div class="col1-main">
+                                <img src="img/menu-1.jpg" alt="photo">
+                                <div class="col-text">
+                                    <h5>
+                                        <span class="name">Chicken Burger</span>
+                                        <span class="price">$115</span>
+                                    </h5>
+                                    <p>Ipsum ipsum clita erat amet dolor justo diam</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col2">
+                            <div class="col1-main">
+                                <img src="img/menu-2.jpg" alt="photo">
+                                <div class="col-text">
+                                    <h5>
+                                        <span class="name">peef Burger</span>
+                                        <span class="price">$120</span>
+                                    </h5>
+                                    <p>Ipsum ipsum clita erat amet dolor justo diam</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col3">
+                            <div class="col1-main">
+                                <img src="img/menu-3.jpg" alt="photo">
+                                <div class="col-text">
+                                    <h5>
+                                        <span class="name">Italian pizza</span>
+                                        <span class="price">$125</span>
+                                    </h5>
+                                    <p>Ipsum ipsum clita erat amet dolor justo diam</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col4">
+                            <div class="col1-main">
+                                <img src="img/menu-4.jpg" alt="photo">
+                                <div class="col-text">
+                                    <h5>
+                                        <span class="name">Steak meat</span>
+                                        <span class="price">$160</span>
+                                    </h5>
+                                    <p>Ipsum ipsum clita erat amet dolor justo diam</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col5">
+                            <div class="col1-main">
+                                <img src="img/menu-5.jpg" alt="photo">
+                                <div class="col-text">
+                                    <h5>
+                                        <span class="name">Fried chicken</span>
+                                        <span class="price">$95</span>
+                                    </h5>
+                                    <p>Ipsum ipsum clita erat amet dolor justo diam</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col6">
+                            <div class="col1-main">
+                                <img src="img/menu-6.jpg" alt="photo">
+                                <div class="col-text">
+                                    <h5>
+                                        <span class="name">Paneer and French fries</span>
+                                        <span class="price">$85</span>
+                                    </h5>
+                                    <p>Ipsum ipsum clita erat amet dolor justo diam</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col7">
+                            <div class="col1-main">
+                                <img src="img/menu-7.jpg" alt="photo">
+                                <div class="col-text">
+                                    <h5>
+                                        <span class="name">Pepperoni pizza</span>
+                                        <span class="price">$100</span>
+                                    </h5>
+                                    <p>Ipsum ipsum clita erat amet dolor justo diam</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col8">
+                            <div class="col1-main">
+                                <img src="img/menu-8.jpg" alt="photo">
+                                <div class="col-text">
+                                    <h5>
+                                        <span class="name">kebab</span>
+                                        <span class="price">$135</span>
+                                    </h5>
+                                    <p>Ipsum ipsum clita erat amet dolor justo diam</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Company <span></span></h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Reservation</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Condition</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact <span></span></h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Street, New York, USA</p>
+                    <p><i class="fas fa-phone"></i> +012 345 67890</p>
+                    <p><i class="fas fa-envelope"></i> info@example.com</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Opening <span></span></h3>
+                    <p>Monday - Saturday <br> 09AM - 09PM</p>
+                    <p>Sunday <br> 10AM - 08PM</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Newsletter <span></span></h3>
+                    <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                    <form action="#">
+                        <input type="email" placeholder="Your email">
+                        <button type="submit">SIGNUP</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© Your Site Name, All Rights Reserved. Designed By HTML Codex</p>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Cookies</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">FAQs</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
