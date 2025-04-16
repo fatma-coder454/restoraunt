@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restoran </title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&amp;
+    family=Nunito:wght@600;700;800&amp;family=Pacifico&amp;display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="home" id="home">
+        <nav id="navbar">
+            <div class="container">
+                <h1 class="logo">
+                    <i class="fa fa-utensils me-3"></i>
+                    Restoran
+                </h1>
+                    <div id="menu-icon" class="menu-icon" onclick="toggleMenu()">
+                        <i class="fa fa-bars"></i> 
+                    </div>
+                    
+                <div class="nav-item " id="nav-item">
+                    <!-- الريسبونسف -->         
+                    <ul id="nav-list">
+                        <li><a href="#home" class="active">Home</a></li>
+                        <li><a href="about.html" target="_blank">About</a></li>
+                        <li><a href="Service.html">Service</a></li>
+                        <li><a href="menu.html">menu</a></li>
+                        <div class="drop">
+                            <li class="arrow"><a href="">pages</a></li>
+                            <div class="drop-item">
+                                <a href="booking.html">Booking</a>
+                                <a href="team.html">Our Team</a>
+                                <a href="testimonial.html">Testimonial</a>
+                            </div>
+                        </div>
+                        <li><a href="contact.html">contact</a></li>
+                    </ul>
+                    <a href="contact.html" class="btn-nav">Book A Table</a>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="home-main">
+                <div class="home-text">
+                    <h1>Enjoy Our <br>Delicious Meal</h1>
+                    <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. 
+                        Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet
+                    </p>
+                    <a href="">Book A Table</a>
+                </div>
+                <div class="home-img">
+                    <img class="spinner" src="../img/hero.png" alt="photo">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- service -->
+    <section class="service" id="service">
+        <div class="container">
+            <div class="service-main">
+                <div class="ser1">
+                    <i class="fa fa-3x fa-user-tie text-primary mb-4"></i>
+                    <h5>Master Chefs</h5>
+                    <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+                </div>
+                <div class="ser2">
+                    <i class="fa fa-3x fa-utensils text-primary mb-4"></i>
+                    <h5>Quality Food</h5>
+                    <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+                </div>
+                <div class="ser3">
+                    <i class="fa fa-3x fa-cart-plus text-primary mb-4"></i>
+                    <h5>Online Order</h5>
+                    <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+                </div>
+                <div class="ser4">
+                    <i class="fa fa-3x fa-headset text-primary mb-4"></i>
+                    <h5>24/7 Service</h5>
+                    <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- about -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-main">
+                <div class="about-img">
+                    <div class="imges">
+                        <img class="im imx1 im1 img1" src="../img/about-1.jpg" alt="photo">
+                        <div class="im img2"><img class="im imx1 im2" src="../img/about-2.jpg" alt="photo"></div>
+                        <div class="img3 im"><img class="im imx2 im3" src="../img/about-3.jpg" alt="photo"></div>
+                        <img class="im imx2 im4 img4" src="../img/about-4.jpg" alt="photo">
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h5>About Us</h5>
+                    <h1>Welcome to <i class="fa fa-utensils text-primary me-2"></i> Restoran</h1>
+                    <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos erat ipsum et lorem et sit,
+                        sed stet lorem sit.
+                    </p>
+                    <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, 
+                        sed stet lorem sit clita duo justo magna dolore erat amet
+                    </p>
+                    <div class="about-num">
+                        <div class="about-num1">
+                            <div class="num-main">
+                                <h1 id="counter1">15</h1>
+                                <div class="num-text">
+                                    <p>Years of</p>
+                                    <h6>Experience</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about-num2">
+                            <div class="num-main">
+                                <h1 id="counter2">50</h1>
+                                <div class="num-text">
+                                    <p>Popular</p>
+                                    <h6>Master Chefs</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- menu section -->
+    <section class="menu" id="menu">
+        <div class="container">
+            <div class="menu-header">
+                <h5>Food Menu</h5>
+                <h1>Most Popular Items</h1>
+            </div>
+            <div class="menu-content">
+                <ul>
+                    <li><a class="active am" href="#cont1" onclick="setActive(this, 'cont1')">
+                        <i class="fa fa-coffee fa-2x text-primary"></i>
+                        <div class="ph">
+                            <p>Popular</p>
+                            <h6>Breakfast</h6>
+                        </div>
+                    </a></li>
+                    <li><a class="am" href="#cont2" onclick="setActive(this, 'cont2')">
+                        <i class="fa fa-hamburger fa-2x text-primary"></i>
+                        <div class="ph">
+                            <p>Special</p>
+                            <h6>Launch</h6>
+                        </div>
+                    </a></li>
+                    <li>
+                        <a href="#cont1" onclick="setActive(this, 'cont1')">
+                            <i class="fa fa-utensils fa-2x text-primary"></i>
+                            <div class="ph">
+                                <p>Lovely</p>
+                                <h6>Dinner</h6>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <div class="tap-content">
+                    <div class="tap1 content " id="cont1" >
+                        <div class="col1">
+                            <div class="col1-main">
+                                <img src="../img/Egg Sandwich.jpg" alt="photo">
+                                <div class="col-text">
+                                    <h5>
+                                        <span class="name">Egg Sandwich</span>
+                                        <span class="price">$40</span>
+                                    </h5>
+                                    <p>Ipsum ipsum clita erat amet dolor justo diam</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col2">
+                            <div class="col1-main">
+                                <img src="../img/OIP.jpg" alt="photo">
+                                <div class="col-text">
+                                    <h5>
+                                        <span class="name">Falafel Breakfast</span>
+                                        <span class="price">$35</span>
+                                    </h5>
+                                    <p>Ipsum ipsum clita erat amet dolor justo diam</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col3">
+                            <div class="col1-main">
+                                <img src="../img/omlit.jpg" alt="photo">
+                                <div class="col-text">
+                                    <h5>
+                                        <span class="name">Vegetable Omelette</span>
+                                        <span class="price">$45</span>
+                                    </h5>
+                                    <p>Ipsum ipsum clita erat amet dolor justo diam</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col4">
+                            <div class="col1-main">
+                                <img src="../img/afocato.jpg" alt="photo">
+                                <div class="col-text">
+                                    <h5>
+                                        <span class="name">Avocado Toast</span>
+                                        <span class="price">$75</span>
+                                    </h5>
+                                    <p>Ipsum ipsum clita erat amet dolor justo diam</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col5">
+                            <div class="col1-main">
+                                <img src="../img/Oatmeal-with-Fruit-and-Nuts.jpg" alt="photo">
+                                <div class="col-text">
+                                    <h5>
+                                        <span class="name">Oatmeal with Fruits and Nuts</span>
+                                        <span class="price">$100</span>
+                                    </h5>
+                                    <p>Ipsum ipsum clita erat amet dolor justo diam</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col6">
+                            <div class="col1-main">
+                                <img src="../img/Bread with Butter and Honey.jpg" alt="photo">
+                                <div class="col-text">
+                                    <h5>
+                                        <span class="name">Bread with Butter and Honey</span>
+                                        <span class="price">$50</span>
+                                    </h5>
+                                    <p>Ipsum ipsum clita erat amet dolor justo diam</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col7">
+                            <div class="col1-main">
+                                <img src="../img/Stuffed Croissant.jpg" alt="photo">
+                                <div class="col-text">
+                                    <h5>
+                                        <span class="name">Stuffed Croissant</span>
+                                        <span class="price">$65</span>
+                                    </h5>
+                                    <p>Ipsum ipsum clita erat amet dolor justo diam</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col8">
+                            <div class="col1-main">
+                                <img src="../img/Pancakes with Syrup and Fruits.jpg" alt="photo">
+                                <div class="col-text">
+                                    <h5>
+                                        <span class="name">Pancakes with Syrup and Fruits</span>
+                                        <span class="price">$75</span>
+                                    </h5>
+                                    <p>Ipsum ipsum clita erat amet dolor justo diam</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tap2 content" id="cont2" >
+                        <div class="col1">
+                            <div class="col1-main">
+                                <img src="../img/menu-1.jpg" alt="photo">
+                                <div class="col-text">
+                                    <h5>
+                                        <span class="name">Chicken Burger</span>
+                                        <span class="price">$115</span>
+                                    </h5>
+                                    <p>Ipsum ipsum clita erat amet dolor justo diam</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col2">
+                            <div class="col1-main">
+                                <img src="../img/menu-2.jpg" alt="photo">
+                                <div class="col-text">
+                                    <h5>
+                                        <span class="name">peef Burger</span>
+                                        <span class="price">$120</span>
+                                    </h5>
+                                    <p>Ipsum ipsum clita erat amet dolor justo diam</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col3">
+                            <div class="col1-main">
+                                <img src="../img/menu-3.jpg" alt="photo">
+                                <div class="col-text">
+                                    <h5>
+                                        <span class="name">Italian pizza</span>
+                                        <span class="price">$125</span>
+                                    </h5>
+                                    <p>Ipsum ipsum clita erat amet dolor justo diam</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col4">
+                            <div class="col1-main">
+                                <img src="../img/menu-4.jpg" alt="photo">
+                                <div class="col-text">
+                                    <h5>
+                                        <span class="name">Steak meat</span>
+                                        <span class="price">$160</span>
+                                    </h5>
+                                    <p>Ipsum ipsum clita erat amet dolor justo diam</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col5">
+                            <div class="col1-main">
+                                <img src="../img/menu-5.jpg" alt="photo">
+                                <div class="col-text">
+                                    <h5>
+                                        <span class="name">Fried chicken</span>
+                                        <span class="price">$95</span>
+                                    </h5>
+                                    <p>Ipsum ipsum clita erat amet dolor justo diam</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col6">
+                            <div class="col1-main">
+                                <img src="../img/menu-6.jpg" alt="photo">
+                                <div class="col-text">
+                                    <h5>
+                                        <span class="name">Paneer and French fries</span>
+                                        <span class="price">$85</span>
+                                    </h5>
+                                    <p>Ipsum ipsum clita erat amet dolor justo diam</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col7">
+                            <div class="col1-main">
+                                <img src="../img/menu-7.jpg" alt="photo">
+                                <div class="col-text">
+                                    <h5>
+                                        <span class="name">Pepperoni pizza</span>
+                                        <span class="price">$100</span>
+                                    </h5>
+                                    <p>Ipsum ipsum clita erat amet dolor justo diam</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col8">
+                            <div class="col1-main">
+                                <img src="../img/menu-8.jpg" alt="photo">
+                                <div class="col-text">
+                                    <h5>
+                                        <span class="name">kebab</span>
+                                        <span class="price">$135</span>
+                                    </h5>
+                                    <p>Ipsum ipsum clita erat amet dolor justo diam</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- reserv -->
+    <section class="reserv">
+        <div class="container">
+            <div class="reserv-main">
+                <div class="main-viduo">
+                    <button type="button" id="playVideoBtn" data-src="https://youtu.be/_dui6BUmMBg?t=17">
+                        <span></span>
+                    </button>
+                </div>
+                <div class="main-form">
+                    <div class="form1">
+                        <h5>Reservation</h5>
+                        <h1>Book A Table Online</h1>
+                        <form >
+                            <div class="inp1">
+                                <div class="inp11">
+                                    <input type="text" class="form-control" id="name" >
+                                    <label for="name">Your Name</label>
+                                </div>
+                            </div>
+                            <div class="inp1">
+                                <div class="inp11 ">
+                                    <input type="email" class="form-control" id="email">
+                                    <label for="email">Your Email</label>
+                                </div>
+                            </div>
+                            <div class="inp1">
+                                <div class="inp11">
+                                    <input type="text" class="form-control datetimepicker-input" id="datetime"  >
+                                    <label for="datetime">Date &amp; Time</label>
+                                </div>
+                            </div>
+                            <div class="inp1 ">
+                                <div class="inp11 ic">
+                                    <select class="form-select  " id="select1">
+                                        <option value="1">People 1</option>
+                                        <option value="2">People 2</option>
+                                        <option value="3">People 3</option>
+                                    </select>
+                                    <label for="select1">No Of People</label>
+                                </div>
+                            </div>
+                            <div class="inp5 inp1">
+                                <div class="inp11 "> 
+                                    <textarea class="form-control" id="message" style="height: 100px; width: 98%;" ></textarea>
+                                    <label for="message">Special Request</label>
+                                </div>
+                            </div>
+                            <div class="inp5">
+                                <button class="btn " type="submit">Book Now</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- team -->
+    <section class="team" id="team">
+        <div class="container">
+            <div class="team-header">
+                <h5>Team Members</h5>
+                <h1>Our Master Chefs</h1>
+            </div>
+            <div class="team-cards">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="../img/team-1.jpg" alt="photo">
+                        </div>
+                        <h5>Full Name</h5>
+                        <small>Designation</small>
+                        <div class="card-icon">
+                            <a href="#">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="../img/team-2.jpg" alt="photo">
+                    </div>
+                    <h5>Full Name</h5>
+                    <small>Designation</small>
+                    <div class="card-icon">
+                        <a href="#">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="../img/team-3.jpg" alt="photo">
+                    </div>
+                    <h5>Full Name</h5>
+                    <small>Designation</small>
+                    <div class="card-icon">
+                        <a href="#">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="../img/team-4.jpg" alt="photo">
+                    </div>
+                    <h5>Full Name</h5>
+                    <small>Designation</small>
+                    <div class="card-icon">
+                        <a href="#">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- test -->
+    <section class="test">
+        <div class="container">
+            <div class="test-header">
+                <h5>Testimonial</h5>
+                <h1>Our Clients Say!!!</h1>
+            </div>
+            <div class="testimonial" >
+                <div class="test1" id="testimonial-carousel">
+                    <div class="test-main">
+                        <div class="test-item">
+                            <div class="item-text">
+                                <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                                <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
+                                <div class="test-img">
+                                    <img src="../img/testimonial-1.jpg" alt="photo">
+                                    <div class="img-text">
+                                        <h5>Client Name</h5>
+                                        <small>Profession</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="test-item ">
+                            <div class="item-text">
+                                <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                                <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
+                                <div class="test-img">
+                                    <img src="../img/testimonial-2.jpg" alt="photo">
+                                    <div class="img-text">
+                                        <h5>Client Name</h5>
+                                        <small>Profession</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="test-item">
+                            <div class="item-text">
+                                <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                                <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
+                                <div class="test-img">
+                                    <img src="../img/testimonial-3.jpg" alt="photo">
+                                    <div class="img-text">
+                                        <h5>Client Name</h5>
+                                        <small>Profession</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="test-item ">
+                            <div class="item-text">
+                                <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                                <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
+                                <div class="test-img">
+                                    <img src="../img/testimonial-4.jpg" alt="photo">
+                                    <div class="img-text">
+                                        <h5>Client Name</h5>
+                                        <small>Profession</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="test-item ">
+                            <div class="item-text">
+                                <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                                <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
+                                <div class="test-img">
+                                    <img src="../img/testimonial-1.jpg" alt="photo">
+                                    <div class="img-text">
+                                        <h5>Client Name</h5>
+                                        <small>Profession</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="test-item ">
+                            <div class="item-text">
+                                <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                                <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
+                                <div class="test-img">
+                                    <img src="../img/testimonial-2.jpg" alt="photo">
+                                    <div class="img-text">
+                                        <h5>Client Name</h5>
+                                        <small>Profession</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="test-item">
+                            <div class="item-text">
+                                <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                                <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
+                                <div class="test-img">
+                                    <img src="../img/testimonial-3.jpg" alt="photo">
+                                    <div class="img-text">
+                                        <h5>Client Name</h5>
+                                        <small>Profession</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="test-item active">
+                            <div class="item-text">
+                                <i class="fa fa-quote-left fa-2x text-primary mb-3 iactive"></i>
+                                <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
+                                <div class="test-img">
+                                    <img src="../img/testimonial-4.jpg" alt="photo">
+                                    <div class="img-text">
+                                        <h5 class="hactive">Client Name</h5>
+                                        <small>Profession</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="test-item ">
+                            <div class="item-text">
+                                <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                                <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
+                                <div class="test-img">
+                                    <img src="../img/testimonial-1.jpg" alt="photo">
+                                    <div class="img-text">
+                                        <h5>Client Name</h5>
+                                        <small>Profession</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="test-item ">
+                            <div class="item-text">
+                                <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                                <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
+                                <div class="test-img">
+                                    <img src="../img/testimonial-1.jpg" alt="photo">
+                                    <div class="img-text">
+                                        <h5>Client Name</h5>
+                                        <small>Profession</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="test3" id="carousel-dots"></div>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Company <span></span></h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Reservation</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Condition</a></li>
+                    </ul>
+                </div>
+    
+                <div class="footer-section">
+                    <h3>Contact <span></span></h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Street, New York, USA</p>
+                    <p><i class="fas fa-phone"></i> +012 345 67890</p>
+                    <p><i class="fas fa-envelope"></i> info@example.com</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+    
+                <div class="footer-section">
+                    <h3>Opening <span></span></h3>
+                    <p>Monday - Saturday <br> 09AM - 09PM</p>
+                    <p>Sunday <br> 10AM - 08PM</p>
+                </div>
+    
+                <div class="footer-section">
+                    <h3>Newsletter <span></span></h3>
+                    <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                    <form action="#">
+                        <input type="email" placeholder="Your email" required>
+                        <button type="submit">SIGNUP</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© Your Site Name, All Rights Reserved. Designed By HTML Codex</p>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Cookies</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">FAQs</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <button id="scrollTopBtn">
+        ↑
+    </button>
+    
+
+    <script src="../main.js"></script>
+</body>
+</html>
